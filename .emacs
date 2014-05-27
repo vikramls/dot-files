@@ -178,7 +178,7 @@
 
 ;;;;; filecache - Find files without knowing path!
 (require 'filecache)
-(file-cache-add-directory-recursively "/home/scratch.vshirgur_methodology/hw_ws/ate/")
+(file-cache-add-directory-recursively "/home/vikram/projects/")
 
 ;;;;; markdown mode
 (autoload 'markdown-mode "markdown-mode"
