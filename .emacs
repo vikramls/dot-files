@@ -5,7 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(custom-enabled-themes (quote (tango-dark)))
- '(ede-project-directories (quote ("/home/vshirgur/vnvtv/UTM/NV_testmethods/src"))))
+ '(ede-project-directories (quote ("/home/vikram/"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -17,8 +17,8 @@
 (add-to-list 'load-path "~\.elisp")
 
 ;;;;; PATH related
-(setenv "PATH" (concat (getenv "PATH") ":/home/vshirgur/builds/bin"))
-(setq exec-path (append exec-path '(":/home/vshirgur/builds/bin")))
+(setenv "PATH" (concat (getenv "PATH") ":/home/vikram/builds/bin"))
+(setq exec-path (append exec-path '(":/home/vikram/builds/bin")))
 
 ;;;;; Functions
 ;; from: http://www.grok2.com/vi-emacs.html#MatchParenthesis
@@ -201,7 +201,7 @@
 ;              (ggtags-mode 1))))
 
 ;;;;; GNU global
-;; (setq load-path (cons "/home/vshirgur/builds/share/gtags/" load-path))
+;; (setq load-path (cons "/home/vikram/builds/share/gtags/" load-path))
 ;; (autoload 'gtags-mode "gtags" "" t)
 ;; (setq c-mode-hook
 ;;       '(lambda()
