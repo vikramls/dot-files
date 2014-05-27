@@ -1,0 +1,9 @@
+# ignore *elc files
+*.elc
+
+# ignore build intermediate files
+*.d
+*.o
+
+# don't ignore .emacs.d!
+!.emacs.d
