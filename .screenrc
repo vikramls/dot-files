@@ -1,0 +1,25 @@
+
+# use bigger scrollback buffer
+defscrollback 900000
+
+# suppress start message
+startup_message off
+
+# Default screens
+screen -t home	0
+screen -t run	1
+screen -t root	2 su - 
+screen -t brego	3 ssh -X brego
+screen -t pi	4 ssh -X pi@10.0.0.88
+screen -t nas00	5 ssh root@10.0.0.10
+screen -t htop	6 htop
+screen -t hasufel	7
+
+
+hardstatus alwayslastline
+hardstatus string '%{= kC}%{C}%{c}%{= kC}[%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{C}][%{y}%l %f%{C}]'
+
+# add CPU idle/sustem/user/interrupt stats
+#backtick 100 5 5 tail -1 /var/tmp/mprem.stats.top
+#caption always '%{= wk} %200` %= %100` %='
+
